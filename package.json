@@ -1,0 +1,24 @@
+{
+  "name": "admin-dashboard-odin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericbrown8787/admin-dashboard-odin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericbrown8787/admin-dashboard-odin/issues"
+  },
+  "homepage": "https://github.com/ericbrown8787/admin-dashboard-odin#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2"
+  }
+}
