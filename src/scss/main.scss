@@ -1,25 +1,70 @@
 @use "variables";
 @use "typography";
 @use "colors";
-@use "reset.scss";
+@use "reset";
 
 body {
-  background: #555;
-}
-
-.container {
+  background: colors.$body-background;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
 
 .navbar {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
   gap: 50px;
-  background: cyan;
+  background: colors.$navbar-background;
+  &__logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    max-height: fit-content;
+    &--icon {
+      max-width: calc(typography.$logo-font-size + 1rem);
+    }
+
+    &--text {
+      text-align: left;
+      font-size: typography.$logo-font-size;
+      font-family: typography.$decorative-font;
+    }
+  }
+
+  &__links {
+    padding-inline-start: 1rem;
+    display: grid;
+    font-family: "Cinzel", serif;
+    gap: 1rem;
+    font-size: typography.$navlink-font-size;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &--link {
+      list-style: none;
+    }
+  }
+}
+
+.link {
+  &__anchor {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    align-items: center;
+    &--icon {
+      max-width: calc(typography.$navlink-font-size + 0.8rem);
+    }
+
+    &--text {
+      color: black;
+      padding-block-start: 5px;
+    }
+  }
 }
 
 .main {
-  background: whitesmoke;
+  background: colors.$main-background;
 }
 
 .feed {
@@ -29,7 +74,7 @@ body {
   column-gap: 1rem;
 }
 .controls {
-  background: yellow;
+  background: colors.$card-background;
 }
 
 .projects {
@@ -39,11 +84,11 @@ body {
 }
 
 .announcements {
-  background: orange;
+  background: colors.$card-background;
   grid-column: 4/4;
 }
 
 .trending {
-  background: lavender;
+  background: colors.$card-background;
   grid-column: 4/4;
 }

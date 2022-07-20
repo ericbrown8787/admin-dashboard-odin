@@ -4,36 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="scss/main.scss" />
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar">
-        <div class="navbar__logo">This is where a logo will go eventually.</div>
-        <ul class="navbar__links">
-          <li class="navbar__links--link">Home</li>
-          <li class="navbar__links--link">Profile</li>
-          <li class="navbar__links--link">Messages</li>
-          <li class="navbar__links--link">History</li>
-          <li class="navbar__links--link">Tasks</li>
-          <li class="navbar__links--link">Communities</li>
-        </ul>
-        <ul class="navbar__links">
-          <li class="navbar__links--link">Settings</li>
-          <li class="navbar__links--link">Privacy</li>
-          <li class="navbar__links--link">Support</li>
-        </ul>
-      </nav>
-      <main class="main">
-        <header class="controls">controls</header>
-        <section class="feed">
-          <article class="projects">projects</article>
-          <article class="announcements">announcements</article>
-          <article class="trending">trending</article>
-        </section>
-      </main>
-    </div>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img
+          src="./img/feather.svg"
+          alt="A feather"
+          class="navbar__logo--icon"
+        />
+        <h1 class="navbar__logo--text">Dashboard</h1>
+      </div>
+      <ul class="navbar__links">
+        <li class="navbar__links--link link">
+          <a href="" class="link__anchor"
+            ><img
+              src="./img/home.svg"
+              alt="Home icon"
+              class="link__anchor--icon"
+            />
+            <p class="link__anchor--text">Home</p></a
+          >
+        </li>
+        <li class="navbar__links--link link">
+          <a href="" class="link__anchor"
+            ><img
+              src="./img/profile.svg"
+              alt="Home icon"
+              class="link__anchor--icon"
+            />
+            <p class="link__anchor--text">Profile</p></a
+          >
+        </li>
+        <li class="navbar__links--link link">
+          <a href="" class="link__anchor"
+            ><img
+              src="./img/mail.svg"
+              alt="Home icon"
+              class="link__anchor--icon"
+            />
+            <p class="link__anchor--text">Messages</p></a
+          >
+        </li>
+        <li class="navbar__links--link link">
+          <a href="" class="link__anchor"
+            ><img
+              src="./img/calendar.svg"
+              alt="Home icon"
+              class="link__anchor--icon"
+            />
+            <p class="link__anchor--text">History</p></a
+          >
+        </li>
+        <li class="navbar__links--link link">
+          <a href="" class="link__anchor"
+            ><img
+              src="./img/clipboard.svg"
+              alt="Home icon"
+              class="link__anchor--icon"
+            />
+            <p class="link__anchor--text">Tasks</p></a
+          >
+        </li>
+        <li class="navbar__links--link link">
+          <a href="" class="link__anchor"
+            ><img
+              src="./img/communities.svg"
+              alt="Home icon"
+              class="link__anchor--icon"
+            />
+            <p class="link__anchor--text">Communities</p></a
+          >
+        </li>
+      </ul>
+      <ul class="navbar__links">
+        <li class="navbar__links--link link">
+          <a href="" class="link__anchor"
+            ><img
+              src="./img/settings.svg"
+              alt="Home icon"
+              class="link__anchor--icon"
+            />
+            <p class="link__anchor--text">Settings</p></a
+          >
+        </li>
+        <li class="navbar__links--link link">
+          <a href="" class="link__anchor"
+            ><img
+              src="./img/privacy.svg"
+              alt="Home icon"
+              class="link__anchor--icon"
+            />
+            <p class="link__anchor--text">Privacy</p></a
+          >
+        </li>
+        <li class="navbar__links--link link">
+          <a href="" class="link__anchor"
+            ><img
+              src="./img/support.svg"
+              alt="Home icon"
+              class="link__anchor--icon"
+            />
+            <p class="link__anchor--text">Support</p></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <header class="controls">controls</header>
+      <section class="feed">
+        <article class="projects">projects</article>
+        <article class="announcements">announcements</article>
+        <article class="trending">trending</article>
+      </section>
+    </main>
   </body>
 </html>
